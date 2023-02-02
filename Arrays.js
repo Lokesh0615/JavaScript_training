@@ -65,8 +65,8 @@ const colors= new Array ("white", "red", "black");
 
 const a=[1,4,1,2,40,23,12];
 // console.log(a.sort());
-// a.sort(function (a,b) { return a-b;});
-// console.log(a);
+a.sort( (a,b) => a-b);
+console.log(a);
 // a.sort(function (a,b) { return 0.5-Math.random() });
 // console.log(a);
 
@@ -91,7 +91,7 @@ const a=[1,4,1,2,40,23,12];
 function myfunction(value, index, array) {
     return value>5;
 }
-// document.getElementsByClassName("demo")[0].innerHTML=a.filter(myfunction)
+document.getElementsByClassName("demo")[0].innerHTML=a.filter((v)=>v>5);
 
 // function myfunction(total, value) {
 //     return total+value;
@@ -105,4 +105,5 @@ let c=a.findIndex(myfunction)
 // document.getElementsByClassName("demo")[0].innerHTML= b;
 // document.getElementsByClassName("demo")[0].innerHTML=c;
 // console.log(a.indexOf(40));
-console.log(a.includes(40));
+// console.log(a.includes(40));
+

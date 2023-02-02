@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/6ac93262d0.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <h1>reference html file</h1>
@@ -18,19 +19,76 @@
 
 
     <!-- <p>You cannot set the number of significant digits of a number to 500:</p> -->
-    <p class="demo"></p>
-    <p class="demo"></p>
+    <p id="demo" style="border: 2px solid red;">This example changes the value of the src attribute
+        <p id="p1">p1</p>
+    </p>
+    <p class="demo">
+        <!-- <p>jhj</p> -->
+        <p id="ok">kk</p>
+    </p>
 
     <!-- <input  name="age" id="age">
     <button onclick="myfunction()">try age</button> -->
 
+    <button id="b1">b1</button>
+    <button id="b2">b2</button>
+    <button id="b3">b3</button>
+    <button id="b4">b4</button>
     <!-- <p >ppleace enter between 5-10</p>-->
-    <input  name="test" id="test">
-    <button onclick="myfunction()">Test Input</button>
-    <p id="notification"></p> 
+    <input  name="test" id="test" placeholder="lokes">
+    <!-- <button onclick="myfunction()">Test Input</button> -->
+    <button onclick="colorChange()">click on me</button>
+    <p id="notification">hhiii</p> 
     <!-- <button onclick="myfunction()">Test Input</button> -->
 
-
+    <img id="image" src="data:image/jpeg;base64,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" alt="">
+<!-- 
+    <table align="center">
+        <form name="myForm" onsubmit="return validateForm()">
+            <thead>
+                <th style="text-align: left;">Billing Address</th>
+                <th style="text-align: left;">Payment</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><label for="Fname">Name</label></td>
+                    <td><label for="Cards">Accespted Cards</label></td>
+                </tr>
+                <tr>
+                    <td> <input type="text" name="Fname" id="Fname" placeholder="Full name"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email</label>
+                    </td>
+                    <td>
+                        <label for="NameOnCard">Name on Card</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="email" name="email" id="email" placeholder="eEmail"></td>
+                    <td> <input type="text" name="NameOnCard" id="NameOnCard" placeholder="Name on Card"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Address">Address</label>
+                    </td>
+                    <td> <label for="cardNumber">Credit card nmber</label></td>
+                </tr>
+            </tbody>
+        </form>
+    </table> -->
+    <form name="myForm" onsubmit="return validateForm()">
+        <label for="fname">fname</label>
+        <input type="text" name="fname" id="fname" required>
+        <!-- <input type="submit" value="suubmit"> -->
+        <label for="fname">fname</label>
+        <input type="text" name="fname" id="fname">
+        <!-- <input type="submit" value="suubmit"> -->
+        <label for="fname">fname</label>
+        <input type="text" name="fname" id="fname">
+        <input type="submit" value="suubmit">
+    </form>
 
     <!-- <script src="./syntex.js"></script> -->
     <!-- <script src="./variables.js"></script> -->
@@ -81,7 +139,16 @@
     <!-- <script src="./class1.js"></script> -->
     <!-- <script src="./classInheritance.js"></script> -->
     <!-- <script src="./asyncCallbacks.js"></script> -->
-    <script src="./asyncAsynchronous.js"></script>
+    <!-- <script src="./asyncAsynchronous.js"></script> -->
+    <!-- <script src="./asyncPromis.js"></script> -->
+    <!-- <script src="./async.js"></script> -->
+    <!-- <script src="./DOMmethods.js"></script> -->
+    <!-- <script src="./DOMElements.js"></script> -->
+    <!-- <script src="./DOmChange.js"></script> -->
+    <!-- <script src="./DOMForms.js"></script> -->
+    <!-- <script src="./DOMNodes.js"></script> -->
+    <!-- <script src="./DOMEvents.js"></script>r -->
+    <script src="./DOMEventListener.js"></script>
 </body>
 </html>
         
