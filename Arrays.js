@@ -107,3 +107,7 @@ let c=a.findIndex(myfunction)
 // console.log(a.indexOf(40));
 // console.log(a.includes(40));
 
+
+let arr=[23,45,18,90,13,12,4];
+// console.log(arr.find((x)=>x<18));
+console.log(arr.findIndex((x)=>x<18),arr.find((x)=>x<18));
