@@ -1,0 +1,30 @@
+{
+    "details": {
+        "name": "lokesh",
+        "DOB": "15-05-2001",
+        "age": 22,
+        "married": false,
+        "address": {
+            "homeNo": 43,
+            "village": "kadugodi"
+        }
+    },
+    "arr": [
+        "lokesh",
+        22,
+        "javascript",
+        false
+    ],
+    "details1": [
+        {
+            "name": "lokesh",
+            "birth": "15-06-2001",
+            "age": 22
+        },
+        {
+            "name": "loky",
+            "birth": "15-06-2001",
+            "age": 21
+        }
+    ]
+}

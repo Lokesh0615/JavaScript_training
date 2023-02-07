@@ -1,0 +1,28 @@
+
+{
+    "id": 1212,
+    "isActive": true,
+    "balance": 12345,
+    "age": 22,
+    "name": "lokesh",
+    "gender": "male",
+    "email": "email.gmail.com",
+    "phone": 9448104702,
+    "address": "124, 1st area bangalore",
+    "tags": [
+        "elusrs",
+        "beerus",
+        "whis"
+    ],
+    "friends": [
+        {
+            "id": 0,
+            "name": "kugo"
+        },
+        {
+            "id": 1,
+            "name": "fyllo"
+        }
+    ],
+    "favoriteFruit": "gum-gum"
+}
